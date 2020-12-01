@@ -1,0 +1,15 @@
+#div-foto{
+    align-content:center;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+    width:100%;
+    background-color:red;
+}
+#div-conteudo{
+    background-color:red;
+}
+#lista{
+    width:100%;
+    text-align:center;
+}

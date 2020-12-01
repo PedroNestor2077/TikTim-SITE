@@ -18,3 +18,6 @@ REGRAS PARA CONTRUÇÃO DO SITE-TIKTIM
 ::::::LINGUA PADRAO DE DECLARAÇÃO::::::
     **SEMPRE DECLARAR NOMES E IDS EM PT-BR**
 
+https://globoplay.globo.com/v/7901986/programa/
+
+3b5998 fb
