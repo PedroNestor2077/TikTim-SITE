@@ -4,6 +4,7 @@ REGRAS PARA CONTRUÇÃO DO SITE-TIKTIM
 =>CSS & HTML:
     CLASSES||
         "usar classes somente quando formos estilizar mais de um elemento no css"
+        "usar tambem para quando um elemento precisar ser alterado vida javascript"
         PADRAO DE DECLARAÇÃO||
             "classe-NOME"
     IDS||
