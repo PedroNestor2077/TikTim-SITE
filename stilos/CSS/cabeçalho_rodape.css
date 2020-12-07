@@ -8,10 +8,11 @@ html,body{
     width: 100%;
     flex-direction:column;
     justify-content:flex-end;
+    height:100vh;
 }
 .cabecalho_full{
     position: absolute;
-    flex-shrink:1 0;
+    transition:all .5s;
     background-color:rgb(0, 0, 0,.85);
     top: 0;
     left: 0;
@@ -60,7 +61,6 @@ footer{
     justify-content:flex-end;
     align-content: center;  
     align-items:center;
-    margin-right:00px;
     border-top:solid rgb(92, 6, 6) 3px;
 }
 .classe-bt-menu{
@@ -76,6 +76,7 @@ footer{
     border-right:none;
     border-left: none;
     box-shadow: 0px 0px 10px rgba(243, 243, 243,.0);
+    transition:all .8s;
 }
 .classe-bt-menu:hover{
     background-color:rgb(191, 4, 17);
@@ -123,10 +124,12 @@ footer{
     flex-direction:row;
     flex-wrap:wrap;
     width:100%;
+    height:500%;
+    margin-top:1000px;
 }
 .logo-full{
     display:flex;
-    position:fixed;
+    position: absolute;
     left:100px;
     top:-20;
     background-color:#e4d6d6;
@@ -146,13 +149,14 @@ footer{
     position:fixed;
     left:0;
     top:30%;
+    width:50px;
 }
 #div-midias-lateral img{
     width:100%;
 }
 .bt-midia{
     margin-top:4px;
-    width:50px;
+    width:90%;
     background-color:#ff9c4a;
     background-color:rgba(0,0,0,0);
     border:none;
@@ -161,7 +165,7 @@ footer{
 }
 .bt-midia:hover{
     margin-top:4px;
-    width:60px;
+    width:100%;
     background-color:rgba(0,0,0,0);
 }
 #div-logo a{
@@ -202,6 +206,7 @@ footer{
     align-items:left;
     border-radius:100px 0px 0px 0px;
     box-shadow:0px 0px 100px rgba(0,0,0,.9);
+
 }
 .div-bt-menu-off a{ 
     background-color:black;
@@ -211,7 +216,6 @@ footer{
 #cabecalho input{
     position:fixed;
 }
-
 .cabecalho_off{
     position:fixed;
     flex-shrink:1 0;
@@ -225,6 +229,8 @@ footer{
     flex-wrap:nowrap;
     box-shadow:10px 10px 10px rgba(243, 243, 243,.5);
     justify-content:space-between;
+    border-top:solid red 3px;
+    transition:all .3s;
 } 
 input[type="checkbox"]:checked ~ #div-bt-menu{
     transform:translateX(-200px);
@@ -234,11 +240,10 @@ input[type="checkbox"]:checked ~ #div-bt-menu{
     z-index:1;
     justify-content:flex-end;
     width:10%;
-    height:100%;
 }
 #lb-chec img{
     padding:10px;
-    max-width:85px;
+    max-width:70px;
     min-width:60px;
 }
 #chec{
