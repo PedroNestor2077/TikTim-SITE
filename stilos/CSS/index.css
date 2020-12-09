@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+#div-container-conteudo{
+    flex-shrink:0;
+    display:flex;
+    align-content:center;
+    align-items:top;
+    justify-content:flex-start;
+    flex-direction:column;
+    flex-wrap:wrap;
+    width:100%;
+    height:110%;
+    margin-top:131px;
+    background-color:rgba(0,0,0,0);
+}
+#div-conteudo{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    width:100%;
+    height:100%;
+    flex-shrink:0;
+    background-color:rgba(0,0,0,0);
+}
+#slides{
+    display:flex;
+    width:80%;
+    height:80%;
+    background-color:rgba(0,0,0,0);
+
+}
+#img-slide{
+    border-radius:20px;
+    box-shadow:10px 15px 10px rgba(0, 0, 0, 0.897);
+    max-width:960px;
+    min-height:260px;
+    max-height:500px;
+    transition:.1s;
+}
+h1{
+    text-align:center;
+    width:100%;
+    font-size:500%;
+    font-family: 'Nerko One';
+    letter-spacing:5px;
+}
+.bt-slide{
+    background-color:rgba(243, 24, 24, 0.13);
+    border:none;
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+.bt-slide img:hover{
+    border-radius:100px;
+    box-shadow:0px 0px 5px black;
+}
+.bt-slide:active{
+    border-radius:100px;
+    box-shadow:0px 0px 5px black;
+    background-color: rgba(0, 0, 0, .7);
+}
+#div-slides{
+    width:100%;
+    height:80%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgba(0,0,0,0);
+    flex-shrink:0;
+}
+#div-indice{
+    display:flex;
+    justify-content:center;
+    width:100%;
+    background-color:rgba(0,0,0,0);
+    height:15px;
+    align-self:flex-end;
+}
+#slides{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+ 
+}
+.input-indice{
+    width:30px;
+    pointer-events:none;
+    margin-top:20px;
+}
+/* ------------------------- */
+#div-blocos{
+    display:flex;
+    justify-content:space-around;
+    flex-shrink:0;
+    background-color:rgba(0,0,0,0);
+    width:100%;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.div-bloco{
+    margin:10px;
+    width:550px;
+    min-width:350px;
+    min-height:300px;
+    height:300px;
+    background-color:rgba(245, 243, 243, 0.863);
+    border-radius:30px;
+    box-shadow:10px 10px 10px rgba(0, 0, 0, .8);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+#bloco1{
+    background-image:url("/stilos/CSS/imagens/bg-bloco1.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+
+}
+#bloco1-conteudo{
+    width:80%;
+    height:300px;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.titulo-bloco{
+    margin:30px;
+    font-family:"Nerko One";
+    font-size:170%;
+    text-shadow:7px 7px 7px rgba(0, 0, 0, 0.774);
+    color:rgba(0, 0, 0,.95);
+}
+.img-bloco1{
+    width:23%;
+    height:100%;
+    border-radius:5px;
+    box-shadow:4px 7px 5px rgba(0, 0, 0, 0.671);
+}
+.img-bloco1:hover{
+    width:23%;
+    height:106%;
+    border-radius:5px;
+    box-shadow:5px 7px 5px rgba(0, 0, 0, 0.671);
+}
+#div-fotos-bloco1{
+    height:30%;
+    width:99%;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    border-top:solid red 5px;
+
+}
+a{
+    color:black;
+}
+#bloco2{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    background-image:linear-gradient( 45deg,rgba(21, 255, 0, 0.767),rgba(255, 255, 0, 0.76),rgba(10, 14, 223, 0.932));
+    background-size:cover;
+    background-position:center;
+
+}
+#bloco2-titulo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    width:100%;
+    height:20%;
+}
+#diego-bloco2{
+    width:40%;
+    height:60%;
+}
+#logo-bloco2{
+    align-self:top;
+}
+#titulo-bloco2{
+    font-size: 220%;
+    color:white;
+}
+.video-bg{
+    position: absolute;
+    margin:0px;
+    padding: 0px;
+    right:0;
+    bottom:0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height:1000px;
+    z-index: -1;
+    pointer-events: none;
+}
+@media (min-aspect-ratio:16/9){
+    .video-bg{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9){
+    .video-bg{
+        width: auto;
+        height: 100%;
+    }
+}
