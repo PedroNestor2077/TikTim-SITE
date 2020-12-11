@@ -8,8 +8,6 @@ var bt_proximo=document.getElementById("bt-proximo")
 var bt_anterior=document.getElementById("bt-anterior")
 var imagem_slide=document.getElementById("img-slide")
 
-
-
 bt_proximo.addEventListener('click',function(){
     imagem_slide.style.width = "90%";
     indice_slides+=1

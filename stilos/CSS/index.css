@@ -10,7 +10,6 @@
     flex-wrap:wrap;
     width:100%;
     height:110%;
-    margin-top:131px;
     background-color:rgba(0,0,0,0);
 }
 #div-conteudo{
@@ -25,14 +24,15 @@
 }
 #slides{
     display:flex;
-    width:80%;
-    height:80%;
+    width:90%;
+    height:99%;
     background-color:rgba(0,0,0,0);
+    max-width:850px;
 
 }
 #img-slide{
     border-radius:20px;
-    box-shadow:10px 15px 10px rgba(0, 0, 0, 0.897);
+    box-shadow:10px 15px 10px rgba(0, 0, 0, 0.233);
     max-width:960px;
     min-height:260px;
     max-height:500px;
@@ -40,13 +40,18 @@
 }
 h1{
     text-align:center;
-    width:100%;
-    font-size:500%;
-    font-family: 'Nerko One';
-    letter-spacing:5px;
+    width:90%;
+    font-size:4vw;
+    font-family:sans-serif;
+    letter-spacing:8px;
+    text-shadow:0px 0px 10px rgb(75, 74, 74);
+    color:white;
+    border-bottom:solid red 2px;
+    border-top:solid red 2px;
+    box-shadow:5px 5px 5px 5px rgba(61, 60, 60, 0.123);
 }
 .bt-slide{
-    background-color:rgba(243, 24, 24, 0.13);
+    background-color:rgba(243, 24, 24, 0);
     border:none;
     outline: thin dotted;
     outline: 0px auto -webkit-focus-ring-color;
@@ -60,14 +65,35 @@ h1{
     box-shadow:0px 0px 5px black;
     background-color: rgba(0, 0, 0, .7);
 }
+#bt-anterior{
+    position:absolute;
+    left:14%;
+}
+#bt-proximo{
+    position:absolute;
+    right:14%;
+}
+#div-slides-container{
+    width:99.5%;
+    height:80%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(197, 193, 193);
+    flex-shrink:1;
+    border: solid rgba(255, 6, 6, 0.774) 3px;
+    background-color:rgba(53, 34, 231, 0.24);
+}
 #div-slides{
-    width:100%;
+    width:90%;
     height:80%;
     display:flex;
     align-items:center;
     justify-content:center;
-    background-color:rgba(0,0,0,0);
+    background-color:rgb(197, 193, 193);
     flex-shrink:0;
+    background-color:rgba(0, 0, 0, 0);
 }
 #div-indice{
     display:flex;
@@ -82,43 +108,69 @@ h1{
     justify-content:center;
     flex-direction:column;
     align-items:center;
- 
 }
 .input-indice{
     width:30px;
     pointer-events:none;
-    margin-top:20px;
+    margin-top:3px;
+
 }
 /* ------------------------- */
-#div-blocos{
+#div-blocos-container{
     display:flex;
-    justify-content:space-around;
-    flex-shrink:0;
-    background-color:rgba(0,0,0,0);
+    justify-content:center;
+    background-color:rgba(0, 0, 0, 0.849);
     width:100%;
     flex-direction:row;
     flex-wrap:wrap;
+    align-items:center;
+    flex-shrink:1;
+    height:auto;
+}
+#titulo-produtos{
+    text-align:center;
+    width:90%;
+    flex-shrink:0;
+    font-size:3vw;
+    font-family:sans-serif;
+    letter-spacing:8px;
+    text-shadow:0px 0px 10px rgb(75, 74, 74);
+    color:white;
+    border-top:solid red 2px;
+}
+#div-blocos{
+    display:flex;
+    justify-content:center;
+    background-color:rgba(0, 0, 0, 0);
+    width:100%;
+    flex-direction:row;
+    flex-wrap:wrap;
+    flex-shrink:0;
+    align-items:center;
 }
 .div-bloco{
     margin:10px;
-    width:550px;
+    width:25vw;
     min-width:350px;
     min-height:300px;
     height:300px;
-    background-color:rgba(245, 243, 243, 0.863);
-    border-radius:30px;
+    background-color:rgba(255, 255, 255, 0);
     box-shadow:10px 10px 10px rgba(0, 0, 0, .8);
     display:flex;
     justify-content:center;
     align-items:center;
     flex-wrap:wrap;
+    flex-shrink:1;
+    border:solid white 2px;
+}
+.div-bloco:hover{
+    transition:all 2s;
+    position:relative;
+    bottom:7px;
+    box-shadow:10px 10px 10px rgba(191, 4, 16, 0.664);
 }
 #bloco1{
-    background-image:url("/stilos/CSS/imagens/bg-bloco1.jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat: no-repeat;
-    justify-content: flex-end;
+
 
 }
 #bloco1-conteudo{
@@ -131,11 +183,7 @@ h1{
     flex-wrap:wrap;
 }
 .titulo-bloco{
-    margin:30px;
-    font-family:"Nerko One";
-    font-size:170%;
-    text-shadow:7px 7px 7px rgba(0, 0, 0, 0.774);
-    color:rgba(0, 0, 0,.95);
+
 }
 .img-bloco1{
     width:23%;
@@ -162,16 +210,7 @@ h1{
 a{
     color:black;
 }
-#bloco2{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap;
-    background-image:linear-gradient( 45deg,rgba(21, 255, 0, 0.767),rgba(255, 255, 0, 0.76),rgba(10, 14, 223, 0.932));
-    background-size:cover;
-    background-position:center;
 
-}
 #bloco2-titulo{
     display:flex;
     justify-content:center;
@@ -188,8 +227,12 @@ a{
     align-self:top;
 }
 #titulo-bloco2{
+    font-family:sans-serif;
     font-size: 220%;
-    color:white;
+    color:rgba(0, 0, 0, 0.979);
+    text-shadow:7px 7px 7px rgba(0, 0, 0, 0.295);
+    color:rgba(0, 0, 0,.95);
+    text-align:center;
 }
 .video-bg{
     position: absolute;
@@ -200,7 +243,7 @@ a{
     min-width: 100%;
     min-height: 100%;
     width: auto;
-    height:1000px;
+    height:100%;
     z-index: -1;
     pointer-events: none;
 }
@@ -215,4 +258,57 @@ a{
         width: auto;
         height: 100%;
     }
+}
+/* ------------------------------------------------- */
+#div-inicial{
+    width:100%;
+    height:90.8%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:rgba(0,0,0,0);
+    flex-shrink:0;
+}
+#bt-produtos{
+    border:solid white 3px;
+    margin-top:1%;
+    width:180px;
+}
+#div-aonde-comprar-container{
+    display:flex;
+    justify-content:center;
+    background-color:rgba(0, 0, 0, 0.849);
+    width:100%;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-items:center;
+    flex-shrink:1;
+    height:auto;
+}
+#div-revendas{
+    display:flex;
+    justify-content:center;
+    background-color:rgba(0, 0, 0, 0);
+    width:100%;
+    flex-direction:row;
+    flex-wrap:wrap;
+    flex-shrink:0;
+    align-items:center;
+}
+#titulo-vendas{
+    margin-top:1%;
+    text-align:center;
+    width:90%;
+    flex-shrink:0;
+    font-size:3vw;
+    font-family:sans-serif;
+    letter-spacing:8px;
+    text-shadow:0px 0px 10px rgb(75, 74, 74);
+    color:white;
+    border-top:solid red 2px;
+}
+#div-bt-revenda{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
 }

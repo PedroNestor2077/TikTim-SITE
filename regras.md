@@ -22,3 +22,4 @@ REGRAS PARA CONTRUÇÃO DO SITE-TIKTIM
 https://globoplay.globo.com/v/7901986/programa/
 
 3b5998 fb
+vermelho tiktim rgb(191, 4, 17)
