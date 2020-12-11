@@ -4,6 +4,7 @@ REGRAS PARA CONTRUÇÃO DO SITE-TIKTIM
 =>CSS & HTML:
     CLASSES||
         "usar classes somente quando formos estilizar mais de um elemento no css"
+        "usar tambem para quando um elemento precisar ser alterado vida javascript"
         PADRAO DE DECLARAÇÃO||
             "classe-NOME"
     IDS||
@@ -18,3 +19,7 @@ REGRAS PARA CONTRUÇÃO DO SITE-TIKTIM
 ::::::LINGUA PADRAO DE DECLARAÇÃO::::::
     **SEMPRE DECLARAR NOMES E IDS EM PT-BR**
 
+https://globoplay.globo.com/v/7901986/programa/
+
+3b5998 fb
+vermelho tiktim rgb(191, 4, 17)

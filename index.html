@@ -5,29 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TIKTIM</title>
     <link rel="stylesheet" href="stilos/CSS/cabeçalho_rodape.css">
+    <link rel="stylesheet" href="stilos/CSS/index.css">
 </head>
 <body>
-    <header id='cabecalho'>
-        <div id="div-cabeçalho">
-            <span id=span-logo>TIKTIM</span>
-            <form id=form-buscar>
-                <input type="text" id="input-buscar" placeholder="  BUSCAR...">
-                <button id="bt-buscar" class="botao"><img src='/stilos/CSS/imagens/ico_lupa.png' id="img-ico_lupa" width="38px"></button>
-            </form>
-        </div><!-- LOGO-BUSCAR -->
-        <div id="div-bt-menu">
-                <a href="./stilos/imagens/ico_lupa.png" class="classe-bt-menu">HOME</a>
-                <a href="" class="classe-bt-menu">PRODUTOS</a>
-                <a href="" class="classe-bt-menu">HISTORIA</a>
-                <a href="" class="classe-bt-menu">CONTATO</a>
+    <header id='cabecalho' class="cabecalho_full">
+        <div id="div-logo" class="logo-full">
+            <a href="index.html"><img src="stilos/CSS/imagens/8_perfis_2.png" alt="" id="img-logo" width="300px"></a>
+        </div><!-- logo -->
+         <div id="div-cabeçalho-midias" class="div-cabeçalho-midias-full">     
+   
+        </div><!-- midias -->
+         <input type='checkbox' id="chec" width="30%">
+             <label for="chec" id="lb-chec">
+            </label>
+        </input> <!-- input -->
+        <div id="div-bt-menu" class="div-bt-menu-full">
+            <a href="./stilos/imagens/ico_lupa.png" class="classe-bt-menu">HOME</a>
+            <a href="" class="classe-bt-menu">PRODUTOS</a>
+            <a href="" class="classe-bt-menu">HISTORIA</a>
+            <a href="" class="classe-bt-menu">CONTATO</a>
         </div> <!-- bt-menu -->
-    </header>
+    </header><!-- CABECALHO -->
+    <div id="div-midias-lateral">
+    <button class="bt-midia"><a href="stilos/CSS/imagens/ico_facebook.png"><img src="stilos/CSS/imagens/ico_facebook_2.png" class="ico_midia"></a></button>
+    <button class="bt-midia"><a href="stilos/CSS/imagens/ico_facebook.png"><img src="stilos/CSS/imagens/ico_instagram.png" class="ico_midia"></a></button>
+    <button class="bt-midia"><a href="stilos/CSS/imagens/ico_facebook.png"><img src="stilos/CSS/imagens/ico_whatsapp.png" class="ico_midia"></a></button>
+    <button class="bt-midia"><a href="stilos/CSS/imagens/ico_facebook.png"><img src="stilos/CSS/imagens/ico_twitter.png" class="ico_midia"></a></button>  
+    <button class="bt-midia"><a href="https://globoplay.globo.com/v/7901986/programa/"><img src="stilos/CSS/imagens/ico_play.png" class="ico_midia"></a></button>
+    </div><!-- midias-lateral -->
+<!-- ------------------------------------------------------------------------------ -->
+<video autoplay muted loop class=video-bg>
+    <source src="stilos/CSS/imagens/video-bg-2.mp4" type="video/mp4">
+</video>  
     <div id="div-container-conteudo">
         <div id="div-conteudo">
-            
+            <div id="div-inicial">
+                <h1 id="titulo-inicial">A MELHOR LINGUIÇA DO BRASIL</h1>
+            </div><!-- inicial -->
+            <div id="div-blocos-container">
+                <h3 id="titulo-produtos">PRODUTOS</h3>
+                <div id="div-blocos">
+                    <div class="div-bloco" id="bloco1"></div><!-- bloco3 -->
+                    <div class="div-bloco" id="bloco2"></div><!-- bloco4 -->
+                    <div class="div-bloco" id="bloco3"></div><!-- bloco3 -->
+                </div><!-- blocos -->
+                <button id="bt-produtos" class=classe-bt-menu>VER TODOS</button>
+            </div><!-- blocos container -->
+            <div id="div-aonde-comprar-container">
+                <h3 id="titulo-vendas">AONDE COMPRAR</h3>
+                <div id="div-revendas">
+                    <div class="div-bloco" id="vendedor1"></div><!-- bloco3 -->
+                    <div class="div-bloco" id="vendedor2"></div><!-- bloco4 -->
+                    <div class="div-bloco" id="vendedor3"></div><!-- bloco3 -->
+                </div><!-- blocos -->
+                <div id="div-bt-revenda">
+                    <button id="bt-produtos" class=classe-bt-menu>VER TODOS</button>
+                    <button id="bt-produtos" class=classe-bt-menu>SEJA UM REVENDEDOR</button>
+                </div><!-- bt-revenda -->
+            </div><!-- blocos container -->
+            <div id="div-slides-container">
+                <div id="bloco2-titulo">
+                    <h3 class="titulo-bloco" id="titulo-bloco2"><img src="stilos/CSS/imagens/ico_logo.png" alt="" id="logo-bloco2" width="20%" height="30%">
+                    <br>É BÃO DEMAIS!!!</h3>
+                </div>
+                
+                <div id="div-slides">
+                    <button class="bt-slide" id="bt-anterior"><img src="stilos/CSS/imagens/ico_back.png" alt="" width="60px"></button>
+                    <section id="slides">
+                        <div id="div-delivery">
+
+                        </div><!-- delivery -->
+                        <img src="stilos/CSS/imagens/index-foto1.png" alt="" id="img-slide" width="100%">
+                        <div id="div-indice">
+                            <input type="radio" class="input-indice" id="input-1" name="input-indice" checked=true>
+                            <input type="radio" class="input-indice" id="input-2" name="input-indice">
+                            <input type="radio" class="input-indice" id="input-3" name="input-indice">
+                            <input type="radio" class="input-indice" id="input-4" name="input-indice">
+                        </div><!-- indice -->
+                    </section>
+                    <button class="bt-slide" id="bt-proximo"><img src="stilos/CSS/imagens/ico_next.png" alt="" width=60px></button>
+                </div>
+            </div><!-- slides -->
         </div><!-- conteudo -->
     </div><!-- container-conteudo -->
-    <footer >
+
+    <!-- -------------------------------------------------------------------------- -->
+    <!-- <footer >
         <div id="div-rodape">
             <div id="div-midia">
                 <a href="stilos/CSS/imagens/ico_facebook.png"><img src="stilos/CSS/imagens/ico_facebook.png" class="ico_midia"></a>
@@ -35,10 +98,20 @@
                 <a href="stilos/CSS/imagens/ico_facebook.png"><img src="stilos/CSS/imagens/ico_whatsapp.png" class="ico_midia"></a>
                 <a href="stilos/CSS/imagens/ico_facebook.png"><img src="stilos/CSS/imagens/ico_twitter.png" class="ico_midia"></a>
             </div><!-- midia -->
-            <span id="span-copyright">
+            <!-- <span id="span-copyright">
                 Copyright® <strong>TikTim</strong> Todos os direitos reservados | Desenvolvido por <strong>Pedro Nestor</strong>
             </span> <!-- copyrigth -->
         </div><!-- RODAPÉ -->
     </footer>
+<script
+    type="text/javascript"
+    src="script/responsivo.js">
+
+</script>
+<script
+    type="text/javascript"
+    src="script/index.js">
+    
+</script>
 </body>
-</html>
+</html> 
