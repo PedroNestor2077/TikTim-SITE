@@ -118,8 +118,8 @@ footer{
 .logo-full{
     display:flex;
     position: absolute;
-    left:100px;
-    top:-20;
+    left:6%;
+    margin-top:1%;
     background-color:#e4d6d6;
     height:160px;
     border-radius:5px 10px 10px 100px;
@@ -128,16 +128,25 @@ footer{
     text-align:center;
     justify-content:center;
     align-items:center;
-    margin-top:20px;
-
 }
-#div-midias-lateral{
+
+.div-midias-lateral{
+    transition:all 1.3s;
     display:flex;
     flex-direction:column;
-    position:fixed;
-    left:0;
+    left:0px;
     top:30%;
-    width:50px;
+    width:50PX;
+    position:fixed;
+}
+.div-midias-lateral-a{
+    transition:all 2s;
+    display:flex;
+    position:fixed;
+    flex-direction:column;
+    left:-80px;
+    top:30%;
+    width:50PX;
 }
 #div-midias-lateral img{
     width:100%;
@@ -162,8 +171,6 @@ footer{
 /*                     CABEÇALHO PEQUENO           */
 .logo-off{
     display:flex;
-    left:20px;
-    top:10px;
     background-color:#e4d6d6;
     height:80px;
     border-radius:3px 7px 7px 50px;
@@ -206,6 +213,7 @@ footer{
 }
 .cabecalho_off{
     position:fixed;
+    z-index:1;
     flex-shrink:1 0;
     background-color:rgb(0, 0, 0,.85);
     top: 0;
@@ -261,4 +269,14 @@ input[type="checkbox"]:checked ~ #div-bt-menu{
         width: auto;
         height: 100%;
     }
+}
+::-webkit-scrollbar-track {
+    background-color: #0c0c0c;
+}
+::-webkit-scrollbar {
+    width:10px;
+    background: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(191, 4, 16, 0.849)
 }
