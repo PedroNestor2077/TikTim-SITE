@@ -3,11 +3,14 @@ function trocar_classe(iten,classe_antiga,classe_nova){
     iten.classList.add(classe_nova);
     return console.log('troquei da classe: '+classe_antiga+" para a classe: "+classe_nova)
 };
-cabecalho=window.document.getElementById("cabecalho")
-div_logo=document.getElementById("div-logo")
-div_cabecalho_midias=document.getElementById("div-cabeçalho-midias")
-div_bt_menu=document.getElementById("div-bt-menu")
-chec=document.getElementById('lb-chec')
+var cabecalho=window.document.getElementById("cabecalho")
+var div_logo=document.getElementById("div-logo")
+var div_cabecalho_midias=document.getElementById("div-cabeçalho-midias")
+var div_bt_menu=document.getElementById("div-bt-menu")
+var chec=document.getElementById('lb-chec')
+var midias_lateral=document.getElementById('div-midias-lateral')
+var img_bt_minimizar=document.getElementById("img-bt-minimizar")
+
 addEventListener
 
 function cabecalho_off(){
@@ -39,12 +42,23 @@ function cabecalho_full(){
 };
 
 window.onscroll=function(){
-    console.log(this.innerWidth)
+    if(this.pageYOffset>125){
+        cabecalho_off()
+    }
     if(this.pageYOffset==0 & this.innerWidth>1220){
         cabecalho_full()
     };
-    if(this.pageYOffset>125){
-        cabecalho_off()
+    if (this.pageYOffset>280){
+        trocar_classe(midias_lateral,"div-midias-lateral","div-midias-lateral-a")
+        setTimeout(function(){
+            img_bt_minimizar.src=("stilos/CSS/imagens/ico_next-2.png")
+        },500)
+    }
+    if(this.pageYOffset==0){
+        trocar_classe(midias_lateral,"div-midias-lateral-a","div-midias-lateral")
+        setTimeout(function(){
+            img_bt_minimizar.src=("stilos/CSS/imagens/ico_back-2.png")
+        },500)
     }
 }
 window.onresize=function(){
