@@ -3,13 +3,20 @@ function trocar_classe(iten,classe_antiga,classe_nova){
     iten.classList.add(classe_nova);
     return console.log('troquei da classe: '+classe_antiga+" para a classe: "+classe_nova)
 };
-cabecalho=window.document.getElementById("cabecalho")
-div_logo=document.getElementById("div-logo")
-div_cabecalho_midias=document.getElementById("div-cabeçalho-midias")
-div_bt_menu=document.getElementById("div-bt-menu")
-chec=document.getElementById('lb-chec')
-addEventListener
-
+function minimizar_midias(){
+    cont+=1
+    trocar_classe(midias_lateral,"div-midias-lateral","div-midias-lateral-a")
+    setTimeout(function(){
+        img_bt_minimizar.src=("stilos/CSS/imagens/ico_next-2.png")
+    },500)
+};
+function maximizar_midias(){
+    cont=0
+    trocar_classe(midias_lateral,"div-midias-lateral-a","div-midias-lateral")
+    setTimeout(function(){
+        img_bt_minimizar.src=("stilos/CSS/imagens/ico_back-2.png")
+    },500)
+};
 function cabecalho_off(){
     trocar_classe(cabecalho,'cabecalho_full','cabecalho_off')
     trocar_classe(div_logo,'logo-full','logo-off')
@@ -19,7 +26,7 @@ function cabecalho_off(){
         ''
      )
     chec.innerHTML=(
-            '<img src="../stilos/CSS/imagens/ico_menu.png" alt="" id="ico_menu" width="100%">'  
+            '<img src="../stilos/CSS/imagens/ico_hamburger.png" alt="" id="ico_menu" width="100%">'  
     )
 };
 function cabecalho_full(){
@@ -37,14 +44,31 @@ function cabecalho_full(){
         'Copyright® '
     )
 };
-
+var cabecalho=window.document.getElementById("cabecalho")
+var div_logo=document.getElementById("div-logo")
+var div_cabecalho_midias=document.getElementById("div-cabeçalho-midias")
+var div_bt_menu=document.getElementById("div-bt-menu")
+var chec=document.getElementById('lb-chec')
+var midias_lateral=document.getElementById('div-midias-lateral')
+var img_bt_minimizar=document.getElementById("img-bt-minimizar")
+var tituloH1=document.getElementById("titulo-inicial")
+var titulo="A MELHOR LINGUIÇA DO BRASIL"
+console.log(titulo[0])
+var texto=""
+var cont=0
+var x=0
 window.onscroll=function(){
-    console.log(this.innerWidth)
-    if(this.pageYOffset==0 & this.innerWidth>1220){
-        cabecalho_full()
-    };
-    if(this.pageYOffset>125){
+    if(this.pageYOffset>125 & cabecalho.className=="cabecalho_full"){
         cabecalho_off()
+    }
+    if(this.pageYOffset==0 & this.innerWidth>1220){
+        cabecalho_full()  
+    };
+    if (this.pageYOffset>280 & cont<1 & midias_lateral.className=="div-midias-lateral"){
+        minimizar_midias()
+    }
+    if(this.pageYOffset==0 & midias_lateral.className=="div-midias-lateral-a"){
+        maximizar_midias()
     }
 }
 window.onresize=function(){
@@ -54,13 +78,27 @@ window.onresize=function(){
     if(this.pageYOffset==0 & this.innerWidth>1220){
         cabecalho_full()
     };
-};
-window.onload=(function(){
-    console.log("oi")
-    if(this.pageYOffset==0 & this.innerWidth>1220){
-        cabecalho_full()
-    };
-    if(this.pageYOffset>125){
-        cabecalho_off()
+    if(this.innerWidth<400){
+        minimizar_midias()
     }
-})
+};
+window.onload=function(){
+    if (this.innerWidth<1220){
+        cabecalho_off()
+    }else{
+        cabecalho_full()
+    }
+    
+};
+/* --------------------------------------animkação--------------------------------------- */
+animacao_titulo=setInterval(function(){
+    console.log("a")
+    texto+=titulo[x]
+    texto_a=texto+"|"
+    tituloH1.innerText=texto_a
+    if(x==(titulo.length)-1){
+        tituloH1.innerText=texto
+        clearInterval(animacao_titulo)
+    }
+    x+=1
+},90)
