@@ -1,5 +1,5 @@
 # Site TikTim
-*Projetado para fins de estudo*-Página Web dedicada a apresentar produtos, serviços e contatos aos clientes da "TikTim" |by -Pedro Nestor- finalizado em 22/12/2020
+-Página Web dedicada a apresentar produtos, serviços e contatos aos clientes da "TikTim" |by -Pedro Nestor- finalizado em 22/12/2020
 ![Aprentação pagina home](https://github.com/PedroNestor2077/TikTim-SITE/blob/master/home.gif)
 <h1>Objetivos do projeto</h1>
 <ul>
